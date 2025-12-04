@@ -8,4 +8,11 @@ Overleaf document: https://www.overleaf.com/5873327455zvrhvjcsjhkj#c0eac7
 2. `source .venv/bin/activate`
 3. `pip install -r requirements.txt`
 
+4. Installing pytorch (for nvidia gpus):
+    1. run command and see wich CUDA version you need to install: `nvidia-smi.exe`
+    2. Go to [pytorch](https://pytorch.org/get-started/locally/)
+    3. Get the pip install command personalized for your system
+    4. Run it in local env
+
+
 

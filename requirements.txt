@@ -1,1 +1,13 @@
 numpy
+torchview
+torchsummary
+cv2
+shutil
+copy
+pandas
+seaborn
+matplotlib
+scikit-learn
+PIL
+
+
