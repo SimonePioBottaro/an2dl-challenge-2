@@ -10,4 +10,5 @@ matplotlib
 scikit-learn
 pillow
 kaggle
+tensorboard
 
