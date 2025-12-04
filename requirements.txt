@@ -1,13 +1,13 @@
 numpy
+torch
+torchvision
 torchview
 torchsummary
-cv2
-shutil
-copy
+opencv-python
 pandas
 seaborn
 matplotlib
 scikit-learn
-PIL
+pillow
 kaggle
 
