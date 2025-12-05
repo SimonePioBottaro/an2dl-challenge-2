@@ -24,5 +24,11 @@ logbook: <https://docs.google.com/document/d/1ChBNvUVrJpMz3F1GdZGSL84j3Ej3LHkJXn
 
 The Batch Norm, upon the collective tide of the batch it relies. But when the tide is low (small batch), erratic the current becomes. Look then to the self. The Layer Norm, the Instance Norm... inward they look. Within the single sample, balance they find. Do not force the ocean's rules upon a cup of water. Know the dimension of your stream, before the banks you build.
 
+### ADVICE 05/12 - Inspect Outliers
+“A single drop of poison, the purest well corrupts. Trust not the label, until the eyes have verified.”
+
+The loss does not fall? Perhaps the teacher lies. A dog labeled as a bird; a blank image whispering silence. These are not data; they are traitors to the gradient. Plot the highest losses. Look at them. To force a model to learn the impossible, only madness to the weights it brings. Purge the traitor, and the training shall flow.
+
+
 
 
