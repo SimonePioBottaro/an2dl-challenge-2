@@ -1,6 +1,6 @@
 numpy
-torch
-torchvision
+#torch
+#torchvision
 torchview
 torchsummary
 opencv-python
@@ -11,4 +11,4 @@ scikit-learn
 pillow
 kaggle
 tensorboard
-
+ipykernel
