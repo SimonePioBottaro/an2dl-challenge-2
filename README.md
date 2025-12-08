@@ -43,6 +43,28 @@ You rotate, you flip... gentle distincts. But the world is cruel. Algorithms the
 
 ---Implementata Augmentation randomica "the storm" dell'esempio. In questo momento l'augmentation viene applicata in maniera graduale. Poco nel transfer learning e più alta nel Fine Tuning
 
+### ADVICE 07/12 - Modern Optimizers
+“The old maps, for new territories suffice they do not. The hunter must change his spear.”
+
+Adam, the faithful servant, tired he may be. The loss landscape, treacherous valleys it hides. The Lion, with instinct fierce and memory sparse, the prey tracks. The Ranger, with the foresight of the look-ahead, the trap avoids. If the descent stalls, clinging to tradition helps you not. Unleash the new beasts.
+
+- Risposta di Gemnini: Si riferisce al fatto che metodi (o strumenti) più vecchi potrebbero non essere i più efficaci per i problemi complessi di oggi.
+- Significato Tecnico: Il consiglio ti suggerisce di abbandonare o integrare il classico ottimizzatore Adam (che viene definito il "fedele servitore, stanco che può essere") in favore di ottimizzatori più recenti e avanzati.
+- Ottimizzatori suggeriti:"The Lion, with instinct fierce and memory sparse, the prey tracks." Potrebbe riferirsi a ottimizzatori che gestiscono la momentum in modo più dinamico o che hanno una "memoria" più limitata (ad esempio, Lion Optimizer, che è noto per la sua aggressività, o versioni come AdamW). "The Ranger, with the foresight of the look-ahead, the trap avoids." Si riferisce molto probabilmente agli ottimizzatori che implementano il meccanismo di "look-ahead" (previsione del gradiente), come l'ottimizzatore Lookahead stesso, oppure varianti di Nesterov (come NAdam o Nesterov Momentum).
+- In sintesi: Prova ottimizzatori all'avanguardia (es. AdamW, Lookahead, Lion) invece del semplice Adam, perché potrebbero navigare meglio il complesso paesaggio di perdita (loss landscape) di questa specifica sfida di classificazione.
+
+### ADVICE 08/12 - Full Resolution & Patching
+“To shrink the world, the truth you erase. In the mosaic of the pieces, the giant vision lives.”
+
+You take the vast image, and to (256, 256) you crush it. The fine crack, the subtle grain... gone they are, lost in the blur of interpolation. A crime against the pixel this is. If the GPU memory screams, shrink you must not. Slice it! Cut the image into tiles, into patches of high fidelity. Let the model walk the landscape step by step, preserving the original resolution. Only when the detail is sharp, the subtle class revealed can be.
+
+- Risposta di Gemini: Critica l'azione di ridurre drasticamente un'immagine (riduzione della risoluzione) perché distrugge i dettagli importanti. Sostiene che l'immagine completa ("giant vision") è composta dai suoi dettagliati sotto-pezzi ("mosaic of the pieces").Significato Tecnico: Il consiglio affronta il problema comune dell'elaborazione delle immagini WSI (Whole Slide Images). Le WSI sono enormi (spesso decine di migliaia di pixel per lato). Per farle entrare nella memoria della GPU, molti le riducono (es. da una risoluzione nativa a (256, 256)).
+- Il Problema: La riduzione di risoluzione (downsampling) elimina i dettagli cruciali della morfologia microscopica ("The fine crack, the subtle grain... gone they are"). La classificazione dei sottotipi molecolari (Luminal A, B, HER2(+), TN) si basa spesso su dettagli cellulari e strutturali molto fini.
+- La Soluzione ("Patching"):"Slice it! Cut the image into tiles, into patches of high fidelity." Se la memoria della GPU non è sufficiente, invece di ridurre l'immagine intera, devi dividerla in piccole sezioni (patch) mantenendo la loro alta risoluzione originale (o almeno una risoluzione significativamente più alta di (256, 256)).Il modello deve essere addestrato a "camminare sul paesaggio" (analizzare l'immagine) pezzo per pezzo, analizzando le patch per preservare i dettagli ("preservando l'originale risoluzione").
+- In sintesi: Non ridurre l'immagine WSI intera per la classificazione. Implementa una strategia di tassellazione (patching): dividi l'immagine WSI in tessere ad alta risoluzione, addestra il modello su queste tessere, e poi usa un meccanismo (ad esempio, Multiple Instance Learning - MIL) per aggregare le previsioni delle tessere e ottenere la previsione finale per l'intera immagine.
+
+
+
 
 
 
