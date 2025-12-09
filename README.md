@@ -53,6 +53,8 @@ Adam, the faithful servant, tired he may be. The loss landscape, treacherous val
 - Ottimizzatori suggeriti:"The Lion, with instinct fierce and memory sparse, the prey tracks." Potrebbe riferirsi a ottimizzatori che gestiscono la momentum in modo più dinamico o che hanno una "memoria" più limitata (ad esempio, Lion Optimizer, che è noto per la sua aggressività, o versioni come AdamW). "The Ranger, with the foresight of the look-ahead, the trap avoids." Si riferisce molto probabilmente agli ottimizzatori che implementano il meccanismo di "look-ahead" (previsione del gradiente), come l'ottimizzatore Lookahead stesso, oppure varianti di Nesterov (come NAdam o Nesterov Momentum).
 - In sintesi: Prova ottimizzatori all'avanguardia (es. AdamW, Lookahead, Lion) invece del semplice Adam, perché potrebbero navigare meglio il complesso paesaggio di perdita (loss landscape) di questa specifica sfida di classificazione.
 
+- ---Implementato Lion e Reduce on Plateau:    ad adesso solo nel fine tuning. To do: aggiungerlo anche nel transfer learning
+
 ### ADVICE 08/12 - Full Resolution & Patching
 “To shrink the world, the truth you erase. In the mosaic of the pieces, the giant vision lives.”
 
@@ -62,6 +64,7 @@ You take the vast image, and to (256, 256) you crush it. The fine crack, the sub
 - Il Problema: La riduzione di risoluzione (downsampling) elimina i dettagli cruciali della morfologia microscopica ("The fine crack, the subtle grain... gone they are"). La classificazione dei sottotipi molecolari (Luminal A, B, HER2(+), TN) si basa spesso su dettagli cellulari e strutturali molto fini.
 - La Soluzione ("Patching"):"Slice it! Cut the image into tiles, into patches of high fidelity." Se la memoria della GPU non è sufficiente, invece di ridurre l'immagine intera, devi dividerla in piccole sezioni (patch) mantenendo la loro alta risoluzione originale (o almeno una risoluzione significativamente più alta di (256, 256)).Il modello deve essere addestrato a "camminare sul paesaggio" (analizzare l'immagine) pezzo per pezzo, analizzando le patch per preservare i dettagli ("preservando l'originale risoluzione").
 - In sintesi: Non ridurre l'immagine WSI intera per la classificazione. Implementa una strategia di tassellazione (patching): dividi l'immagine WSI in tessere ad alta risoluzione, addestra il modello su queste tessere, e poi usa un meccanismo (ad esempio, Multiple Instance Learning - MIL) per aggregare le previsioni delle tessere e ottenere la previsione finale per l'intera immagine.
+- ---Da implementare
 
 
 
