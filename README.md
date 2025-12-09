@@ -66,7 +66,12 @@ You take the vast image, and to (256, 256) you crush it. The fine crack, the sub
 - In sintesi: Non ridurre l'immagine WSI intera per la classificazione. Implementa una strategia di tassellazione (patching): dividi l'immagine WSI in tessere ad alta risoluzione, addestra il modello su queste tessere, e poi usa un meccanismo (ad esempio, Multiple Instance Learning - MIL) per aggregare le previsioni delle tessere e ottenere la previsione finale per l'intera immagine.
 - ---Da implementare
 
+ADVICE 09/12 - Masks as Focus Filters
+“The stage is vast, but the actor is small. Silence the void, that the voice may be heard.”
 
+The image is filled with noise—the empty wall, the irrelevant sky. Why ask the weights to process the silence? You possess the mask. Use it not just as a label, but as a blade. Crop the input to the object's bounds, or multiply the image by the mask to cast the background into darkness. When the distraction is zeroed out, the model no longer searches the fog. It looks only at the soul of the data. Focus, the ultimate accelerator it is.
+
+- ---Implementato
 
 
 
