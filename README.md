@@ -117,3 +117,12 @@ Why must an image be only a cat or only a dog? This certainty, arrogance it bree
 
 **da implementare**
 
+---
+
+### ADVICE 13/12 - Contrastive Pretraining
+
+“To know the light, know the shadow you must. Before the name is given, the difference is felt.”
+
+A child learns "hot" not by the word, but by the touch of "cold". So your backbone must learn. Contrastive Learning (CLIP, SimCLR), a teacher of relationships it is. It pulls the similar close, and pushes the different apart, long before a label is whispered. Upon this geometry of understanding, the house of classification, sturdy it stands.
+
+**da implementare**
