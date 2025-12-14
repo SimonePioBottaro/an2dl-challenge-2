@@ -16,3 +16,4 @@ ipywidgets
 lion-pytorch
 tqdm
 xgboost
+grad-cam
