@@ -107,3 +107,10 @@ Why must an image be only a cat or only a dog? This certainty, arrogance it bree
 
 A child learns "hot" not by the word, but by the touch of "cold". So your backbone must learn. Contrastive Learning (CLIP, SimCLR), a teacher of relationships it is. It pulls the similar close, and pushes the different apart, long before a label is whispered. Upon this geometry of understanding, the house of classification, sturdy it stands.
 
+---
+
+## ADVICE 14/12 - Pseudo-Labeling
+
+“The silent student holds wisdom too. Let the unproven teach the master.”
+
+You have test data, or unlabeled data. Useless? No. Train your model. Let it predict these silent images. Take the ones where it is most confident. Pretend these predictions are the truth. Add them to your training set and train again. The model reinforces its own beliefs. A dangerous loop it is, but if guided carefully, the dataset grows without human hand.

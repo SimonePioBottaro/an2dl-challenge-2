@@ -15,3 +15,11 @@
     2. Go to [pytorch](https://pytorch.org/get-started/locally/)
     3. Get the pip install command personalized for your system (for me it was: `pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130`)
     4. Run it in local env
+
+---
+
+## References
+
+* pytorch mdoel: <https://docs.pytorch.org/vision/main/models.html>
+* paper "Deep learning-based classification of breast cancer molecular subtypes from H&E whole-slide images": <https://pmc.ncbi.nlm.nih.gov/articles/PMC11667687/>
+* Macenko stain normalization: <https://www.geeksforgeeks.org/machine-learning/macenko-method-for-normalizing-histology-slides-for-quantitative-analysis/>
