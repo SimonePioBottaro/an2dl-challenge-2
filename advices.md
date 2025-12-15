@@ -114,3 +114,10 @@ A child learns "hot" not by the word, but by the touch of "cold". So your backbo
 “The silent student holds wisdom too. Let the unproven teach the master.”
 
 You have test data, or unlabeled data. Useless? No. Train your model. Let it predict these silent images. Take the ones where it is most confident. Pretend these predictions are the truth. Add them to your training set and train again. The model reinforces its own beliefs. A dangerous loop it is, but if guided carefully, the dataset grows without human hand.
+
+
+### ADVICE 15/12 - Comparative Analysis & Appendices
+
+“To show only the survivor, the battle you hide. In the chorus of the fallen, the victor's strength is measured.”
+
+A table with a single row, the "Final Model", a silence it is. How good is it, if the baseline we see not? The struggle, the failure, the simple model that almost worked... these the context give. You must compare. Show the progression from the simple CNN to the heavy Ensemble. And if the three pages a cage they are, fear you must not. The Appendix and Supplementary Materials, an open field they offer. There, the full table of your experiments place you can. The report tells the story; the appendix holds the proof.
