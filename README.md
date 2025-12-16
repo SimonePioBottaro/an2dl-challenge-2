@@ -16,6 +16,8 @@
     3. Get the pip install command personalized for your system (for me it was: `pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130`)
     4. Run it in local env
 
+5. Useful command if you are in `wsl sudo mount -t drvfs G: /mnt/g`, remounts google drive directory
+
 ---
 
 ## References
